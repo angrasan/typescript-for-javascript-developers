@@ -1,5 +1,6 @@
 export {};
 
+// signature
 function double(value: number): number;
 function double(value: string): string;
 
