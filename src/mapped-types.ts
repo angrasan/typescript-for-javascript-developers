@@ -1,14 +1,15 @@
 export {};
 
 type Profile = {
-  name: string,
-  age: number
+  name: string;
+  age: number;
 };
 
-type PartialType = Partial<Profile>;
+type PartialProfile = Partial<Profile>;
 
-type Propertytypes = keyof Profile;
+// type Partial<T> = {[P in keyof T]?: T[P];};
+type PropertyTypes = keyof Profile;
 
-type Optional<T> = { [ P in keyof T]?: T[P] | null};
+type Optional<T> = { [P in keyof T]?: T[P] | null };
 
 type OptionalProfile = Optional<Profile>;
